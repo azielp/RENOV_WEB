@@ -183,3 +183,116 @@ header{
   }
 
 }
+/* ===== MANUTENÇÃO ===== */
+.manutencao{
+  background:#0b1f2a;
+  color:#fff;
+  text-align:center;
+  padding:60px 8%;
+}
+
+.manutencao h2{
+  font-size:28px;
+  margin-bottom:5px;
+}
+
+.manutencao .sub{
+  color:#9ca3af;
+  margin-bottom:30px;
+}
+
+.manutencao-cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.m-card{
+  background:#102c3a;
+  border:1px solid rgba(255,255,255,0.1);
+  padding:25px;
+  border-radius:10px;
+  width:220px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.m-card.active{
+  background:#15803d;
+}
+
+.m-card:hover{
+  transform:translateY(-5px);
+}
+
+.m-card .icon{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+/* ===== TESTEMUNHO ===== */
+.testemunho{
+  background:#f3f4f6;
+  padding:60px 8%;
+}
+
+.testemunho h2{
+  font-size:28px;
+  margin-bottom:40px;
+  max-width:600px;
+}
+
+.testemunho-box{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.testemunho-box img{
+  width:200px;
+  border-radius:10px;
+}
+
+.texto{
+  max-width:500px;
+}
+
+.texto .aspas{
+  font-size:40px;
+  color:#15803d;
+}
+
+.texto p{
+  font-size:18px;
+  margin:10px 0;
+}
+
+.texto small{
+  color:#555;
+}
+
+.texto button{
+  margin-top:15px;
+  background:#15803d;
+  color:#fff;
+  border:none;
+  padding:12px 20px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* ===== RESPONSIVO ===== */
+@media(max-width:768px){
+
+  .testemunho-box{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .testemunho h2{
+    font-size:22px;
+  }
+
+}
