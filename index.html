@@ -12,205 +12,303 @@
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- BOOTSTRAP -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- AOS ANIMAÇÕES -->
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+<header data-aos="fade-down">
   <div class="nav">
     <div class="logo">
-      <img src="img/1. RENOV_HORIZONTAL COR.png">
+      <img src="img/1. RENOV_HORIZONTAL COR.png" alt="">
     </div>
 
     <div class="menu">
-      <a href="#">Simulador</a>
+      <a href="#">Simulador de Manutenção</a>
       <a href="#">QUEM SOMOS</a>
       <a href="#">SERVIÇOS</a>
       <a href="#">PORTFÓLIO</a>
       <a href="#">CONTATO</a>
     </div>
-
-    <button class="btn-nav">Solicitar Inspeção</button>
+    
+    <a href="#">
+      <button class="btn-nav pulse">Solicitar Inspeção Técnica</button>
+    </a>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="overlay2"></div>
 
-  <div class="hero-content" data-aos="fade-right">
-    <h1>Transformamos estruturas.<br>Presamos o futuro.</h1>
+  <div class="hero-content" data-aos="fade-up">
+    <h1 class="fade-text">Transformamos estruturas.<br>Presamos o futuro.</h1>
     <p>Engenharia de alta performance para dar vida longa ao seu patrimônio.</p>
-    <a href="#" class="btn">Solicitar Inspeção</a>
+    <a href="#" class="btn pulse">Solicitar Inspeção Técnica</a>
   </div>
 </section>
 
-<!-- CARDS -->
 <section class="cards">
 
-  <div class="card1 gray" data-aos="zoom-in">MANUTENÇÃO</div>
+  <div class="card1 gray hover-up" data-aos="zoom-in">MANUTENÇÃO</div>
 
-  <div class="card1 green" data-aos="zoom-in" data-aos-delay="100" style="position:relative;">
-    <div class="icon-circle">
+  <div class="card1 green hover-up" data-aos="zoom-in" data-aos-delay="100" style="position:relative;">
+    <div class="icon-circle rotate-icon">
       <i class="fas fa-tools"></i>
     </div>
     REFORMA
   </div>
 
-  <div class="card1 dark" data-aos="zoom-in" data-aos-delay="200">INSPEÇÃO</div>
+  <div class="card1 dark hover-up" data-aos="zoom-in" data-aos-delay="200">INSPEÇÃO</div>
 
 </section>
 
-<!-- MANUTENÇÃO -->
 <section class="manutencao">
 
   <h2 data-aos="fade-up">MANUTENÇÃO</h2>
+  <p class="sub" data-aos="fade-up">Vantagens para você</p>
 
   <div class="manutencao-cards">
 
-    <div class="m-card active" data-aos="flip-left">
-      <i class="fas fa-building"></i><br>Gestão de ativos
+    <div class="m-card active hover-scale" data-aos="flip-left">
+      <div class="icon"><i class="fas fa-building"></i></div>
+      <span>Gestão de ativos</span>
     </div>
 
-    <div class="m-card" data-aos="flip-left" data-aos-delay="100">
-      <i class="fas fa-headset"></i><br>Suporte 24/7
+    <div class="m-card hover-scale" data-aos="flip-left" data-aos-delay="100">
+      <div class="icon"><i class="fas fa-headset"></i></div>
+      <span>Suporte técnico 24/7</span>
     </div>
 
-    <div class="m-card" data-aos="flip-left" data-aos-delay="200">
-      <i class="fas fa-bullseye"></i><br>Consultorias
+    <div class="m-card hover-scale" data-aos="flip-left" data-aos-delay="200">
+      <div class="icon"><i class="fas fa-bullseye"></i></div>
+      <span>Consultorias preventivas</span>
     </div>
 
   </div>
 
 </section>
 
-<!-- TESTEMUNHO -->
 <section class="testemunho">
 
-  <h2>Garantimos que o coração nunca pare.</h2>
+  <h2 data-aos="fade-up">Garantimos que o coração do seu edifício nunca pare de bater.</h2>
 
   <div class="testemunho-box">
 
-    <img src="img/eh.jpeg" data-aos="fade-right">
+    <img src="img/eh.jpeg" class="img-hover" data-aos="fade-right">
 
     <div class="texto" data-aos="fade-left">
-      <p>A Renov mudou nossa visão.</p>
-      <button>Agendar</button>
+      <span class="aspas">“</span>
+      <p>A Renov mudou nossa visão de manutenção.</p>
+      <small>Fernando Amador</small><br>
+
+      <button class="pulse">Agendar Visita Técnica</button>
     </div>
 
   </div>
 
 </section>
 
-<!-- ANTES E DEPOIS -->
 <section class="antes-depois">
+
+  <div class="top-bar">
+    <h3 data-aos="fade-right">Antes e Depois</h3>
+    <div class="right">
+      <span class="tag" data-aos="fade-left">REFORMA</span>
+    </div>
+  </div>
 
   <div class="comparacao-grid">
 
-    <div class="compare-box" data-aos="zoom-in">
+    <div class="compare-box hover-zoom" data-aos="zoom-in">
       <img src="img/3. Antes.jpg">
-      <div class="plus">+</div>
+      <span class="label">Antes</span>
+      <div class="plus pulse">+</div>
     </div>
 
-    <div class="compare-box" data-aos="zoom-in" data-aos-delay="100">
+    <div class="compare-box hover-zoom" data-aos="zoom-in" data-aos-delay="100">
       <img src="img/3. Depois.jpeg">
-      <div class="plus">+</div>
+      <span class="label">Depois</span>
+      <div class="plus pulse">+</div>
     </div>
 
   </div>
 
 </section>
 
-<!-- EXPLICAÇÃO -->
 <section class="explicacao">
 
   <div class="left" data-aos="fade-right">
-    <h2>Evoluímos espaços</h2>
-    <p>Garantimos durabilidade.</p>
+    <h2>Evoluímos espaços para que eles acompanhem a sua ambição.</h2>
+
+    <p>
+      Aplicamos soluções de engenharia avançadas para garantir
+      segurança estrutural e durabilidade em cada projeto.
+    </p>
+
+    <button class="pulse">Conhecer mais</button>
   </div>
 
   <div class="right" data-aos="fade-left">
-    <img src="img/2.png">
+    <img src="img/2.png" class="float">
   </div>
 
 </section>
 
-<!-- VISÃO -->
 <section class="visao">
 
-  <h2>VISÃO 360°</h2>
+  <h2 data-aos="fade-up">VISÃO 360°: ENGENHARIA COM MÉTODO</h2>
 
-  <div class="hex-wrapper" data-aos="zoom-in-up">
+  <div class="hex-wrapper">
+
+    <div class="hex top">CONSTRUÇÃO</div>
+    <div class="hex left">REFORMA</div>
     <div class="hex center active">MANUTENÇÃO</div>
+    <div class="hex right">INSPEÇÃO</div>
+    <div class="hex bottom">GESTÃO</div>
+
   </div>
 
 </section>
+<!-- ===== PORTIFOLIO  ===== -->
 
-<!-- PORTFOLIO -->
 <div class="portfolio-container">
-  <h2>PORTFÓLIO</h2>
+    <h2 class="portfolio-title" data-aos="fade-up">PORTFÓLIO</h2>
 
-  <div class="row">
-
-    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
-      <div class="card" data-category="prestigio">
-        <img src="https://picsum.photos/400/300?1">
-      </div>
+    <div class="portfolio-tabs" data-aos="fade-up">
+        <button class="tab active" data-tab="tudo">Tudo</button>
+        <button class="tab" data-tab="prestigio">Fases de execução</button>
+        <button class="tab" data-tab="projetos">Projetos</button>
+        <button class="tab" data-tab="reformas">Reformas</button>
     </div>
 
-    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
-      <div class="card" data-category="prestigio">
-        <img src="https://picsum.photos/400/300?2">
-      </div>
-    </div>
+    <div class="grid">
 
-  </div>
+        <div class="card hover-zoom" data-category="prestigio" data-aos="fade-up">
+            <img src="https://picsum.photos/400/300?1">
+            <div class="overlay">
+                <h3>Casa Moderna</h3>
+                <p>Projeto de alto padrão</p>
+            </div>
+        </div>
+
+        <div class="card hover-zoom" data-category="prestigio" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://picsum.photos/400/300?2">
+            <div class="overlay">
+                <h3>Moradia Luxo</h3>
+                <p>Arquitetura premium</p>
+            </div>
+        </div>
+
+        <div class="card hover-zoom" data-category="projetos" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://picsum.photos/400/300?3">
+            <div class="overlay">
+                <h3>Projeto Urbano</h3>
+                <p>Desenvolvimento urbano</p>
+            </div>
+        </div>
+
+        <div class="card hover-zoom" data-category="reformas" data-aos="fade-up" data-aos-delay="300">
+            <img src="https://picsum.photos/400/300?5">
+            <div class="overlay">
+                <h3>Antes & Depois</h3>
+                <p>Reforma completa</p>
+            </div>
+        </div>
+
+    </div>
 </div>
 
-<!-- RODAPÉ -->
+<!-- ===== RODAPÉ ===== -->
 <div class="rodape-container">
 
-  <div class="rodape-topo" data-aos="fade-up">
-    <h2>O FUTURO DA MANUTENÇÃO</h2>
-  </div>
+    <div class="rodape-topo" data-aos="fade-up">
+        <h2>O FUTURO DA MANUTENÇÃO</h2>
+        <p>Soluções inovadoras para inspeção e manutenção com tecnologia avançada.</p>
 
-  <div class="rodape-conteudo">
-
-    <div class="contactos" data-aos="fade-right">
-      <h3>CONTACTO</h3>
-      <p>Luanda, Angola</p>
+        <div class="rodape-imagens">
+            <img src="https://picsum.photos/300/200?1">
+            <img src="https://picsum.photos/300/200?2">
+            <img src="https://picsum.photos/300/200?3">
+        </div>
     </div>
 
-    <div class="form-box" data-aos="fade-left">
-      <input placeholder="Nome">
-      <input placeholder="Email">
-      <button>Enviar</button>
+    <div class="rodape-conteudo">
+
+        <div class="contactos" data-aos="fade-right">
+            <h3>CONTACTO</h3>
+            <ul>
+                <li>📍 Luanda, Angola</li>
+                <li>📞 +244 900 000 000</li>
+                <li>✉️ email@email.com</li>
+                <li>🌐 www.site.com</li>
+            </ul>
+        </div>
+
+        <div class="form-box" data-aos="fade-left">
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Escreva mensagem"></textarea>
+                <button class="pulse" type="submit">Enviar</button>
+            </form>
+        </div>
+
     </div>
 
-  </div>
+    <div class="rodape-bottom" data-aos="fade-up">
+        <p>©2026 Todos os direitos reservados</p>
 
-  <div class="rodape-bottom">
-    <p>©2026</p>
-
-    <div class="social">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram"></i>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
-  </div>
 
 </div>
 
-<!-- SCRIPTS -->
+<!-- AOS SCRIPT -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-AOS.init({ duration: 1000, once: true });
+AOS.init({
+  duration: 1000,
+  once: true
+});
+
+// BOTÃO +
+const plusButtons = document.querySelectorAll(".plus");
+
+plusButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".compare-box").forEach(box => {
+      box.classList.remove("active");
+    });
+    btn.parentElement.classList.add("active");
+  });
+});
+
+// PORTFOLIO FILTER
+const tabs = document.querySelectorAll(".tab");
+const cards = document.querySelectorAll(".card");
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const category = tab.getAttribute("data-tab");
+
+        cards.forEach(card => {
+            card.style.display = (category === "tudo" || card.dataset.category === category)
+                ? "block" : "none";
+        });
+
+    });
+});
 </script>
 
 </body>
